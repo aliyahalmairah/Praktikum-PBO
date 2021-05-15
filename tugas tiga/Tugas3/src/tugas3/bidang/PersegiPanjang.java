@@ -3,30 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tugas2.bidang;
+package tugas3.bidang;
 
 /**
  *
  * @author VivoBook
  */
-public class PersegiPanjang implements MenghitungBidang{
-    int panjang;
-    int lebar;
+public class PersegiPanjang {
+    double panjang;
+    double lebar;
 
-    public PersegiPanjang(int panjang, int lebar) {
+    public PersegiPanjang(double panjang, double lebar) {
         this.panjang = panjang;
         this.lebar = lebar;
     }
- 
-    @Override
+    
     public double luas() {
         return panjang*lebar;
     }
-
-    @Override
+    
     public double keliling() {
         return 2*panjang+2*lebar;
     }
-    
-    
 }
